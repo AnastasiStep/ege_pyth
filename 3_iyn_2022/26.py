@@ -7,11 +7,13 @@ k = 0
 mina = 10000000
 for i in range(n):
     for j in range(n):
-        if i != j:
+        if (s[i] + s[j]) % 2 == 0:
+            mino = 10000000
             sr = (s[i] + s[j])//2
-            print(s[i], s[j], sr, s[i] - sr, s[j] - sr)
-            if (s[i] - sr == 5) or (s[j] - sr == 5):
-                k += 1
-                if sr < mina:
-                    mina = sr
+            for o in range(n):
+                if (s[o] - sr < mino) and (s[o] - sr > 0):
+                    mino = s[o] - sr
+            print(mino)
+            if mino == 5:
+                k+=1
 print(k, mina)
