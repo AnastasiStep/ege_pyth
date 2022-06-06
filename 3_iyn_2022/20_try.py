@@ -34,7 +34,7 @@ for s in range(1,29):
         print(s)
 '''
 
-def f(s,n): #perv or vtor
+def f(s, n): #perv or vtor
     if s >= 29:
         if (n == 2) or (n == 4): return True
         else: return False

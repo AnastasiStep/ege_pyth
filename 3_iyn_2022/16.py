@@ -1,6 +1,3 @@
-from tkinter import N
-
-
 def F(n):
     if n == 1:
         return 1
