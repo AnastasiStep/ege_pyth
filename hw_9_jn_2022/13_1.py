@@ -6,7 +6,7 @@ def f(s,n):
         if n >= 2: return False
         elif n % 2 == 0:
             if (s % 3 == 0) and (s % 2 == 0):
-                return f(s/2, n + 1) and f((s*2)/3, n + 1)
+                return f(s/2, n + 1) and f(s/3, n + 1)
             elif s % 3 == 0:
                 return f(s/3, n + 1) and f(s - 2, n + 1)
             elif s % 2 == 0:
@@ -15,7 +15,7 @@ def f(s,n):
                 return f(s - 3, n + 1) and f(s - 2, n + 1)
         else:
             if (s % 3 == 0) and (s % 2 == 0):
-                return f(s/2, n + 1) or f((s*2)/3, n + 1)
+                return f(s/2, n + 1) or f(s/3, n + 1)
             elif s % 3 == 0:
                 return f(s/3, n + 1) or f(s - 2, n + 1)
             elif s % 2 == 0:

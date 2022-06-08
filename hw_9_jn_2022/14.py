@@ -14,4 +14,3 @@ for i in range(l - 1):
     if k > maxa:
         maxa = k
 print(maxa + 1)
-#???
