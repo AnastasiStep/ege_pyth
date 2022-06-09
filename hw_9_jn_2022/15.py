@@ -19,7 +19,7 @@ for i in range(len(b[0])):
         if b[1][i].count((str)(j)) == 0:
             k += 1
     p.append(k)
-print(max(p))
+print(sum(p))
 o = []
 for i in range(len(b[0])):
     k = 0

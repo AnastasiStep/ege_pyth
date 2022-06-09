@@ -3,7 +3,7 @@ def f(s1, s2, n):
         if n % 2 == 0: return True
         else: return False
     else:
-        if n >= 1000: return False
+        if n >= 100: return False
         elif n % 2 == 0:
             return f(s1 + 1, s2, n + 1) and f(s1, s2 + 1, n + 1) and f(s1 * 3, s2, n + 1) and f(s1, s2 * 3, n + 1)
         else:
