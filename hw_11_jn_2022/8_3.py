@@ -36,5 +36,5 @@ def f1(s1, s2, n):
 
 
 for s in range(1, 41):
-    if f(5, s, 0) and not(f1(5,s, 0)):
+    if f(5, s, 0) and not(f1(5, s, 0)):
         print(s)

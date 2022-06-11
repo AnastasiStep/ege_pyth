@@ -18,4 +18,3 @@ def f(s, h, n):
 for s in range(1, 140):
     if f(s, 0, 0):
         print(s)
-###???

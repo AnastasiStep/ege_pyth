@@ -1,4 +1,4 @@
-s = '0123456789ABCDEF'
-s = reversed(s)
-print(s)
+sch = 'ECA86420'
+sne = 'FDB97531'
 k = 0
+#???
