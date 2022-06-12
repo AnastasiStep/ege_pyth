@@ -8,7 +8,7 @@ def f(s1, s2, n):
     else:
         if n >= 2: return False
         elif n % 2 == 0: 
-            return f(s1 + 2, s2, n + 1) and f(s1, s2 + 2, n + 1) and f(s1 * 2, s2, n + 1) and f(s1, s2 * 2, n + 1)
+            return f(s1 + 2, s2, n + 1) or f(s1, s2 + 2, n + 1) or f(s1 * 2, s2, n + 1) or f(s1, s2 * 2, n + 1)
         else:
             return f(s1 + 2, s2, n + 1) or f(s1, s2 + 2, n + 1) or f(s1 * 2, s2, n + 1) or f(s1, s2 * 2, n + 1)
 for s in range(1, 48):

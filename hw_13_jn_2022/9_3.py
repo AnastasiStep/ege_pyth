@@ -25,5 +25,5 @@ for k in range(1, 100):
     for s in range(1, 100):
         if (k + s) >= 19:
             if k == s:
-                if f(k, s, 0):
+                if f(k, s, 0) and not(f1(k,s,0)):
                     print(k)
