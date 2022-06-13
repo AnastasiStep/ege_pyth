@@ -23,7 +23,7 @@ for n in range(300000000, 0, -1):
                     break
             if u == 0:
                 sd.append(n//i)
-        if i**2 == 0:
+        if i**2 == n:
             u = 0
             t = i
             while t > 0:
@@ -34,8 +34,9 @@ for n in range(300000000, 0, -1):
                     break
             if u == 0:
                 sd.append(i)
-    if len(sd) > 5:
+    if len(sd) >= 5:
         k += 1
+        sd.sort()
         sd = sd[::-1]
         print(sd[4], len(sd))
     if k == 5:

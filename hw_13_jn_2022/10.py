@@ -1,25 +1,19 @@
+from itertools import count
+
+
 k = 0
-for i in range(166006, 167000, 10):
-    if (i % 6 == 0) and (i % 7 == 0) and (i % 8 == 0):
-        k += 1
-        sd = []
-        for j in range(2, (int)(i**0.5)+1):
-            if (i % j == 0) and (j**2 != i):
-                sd.append(j)
-                sd.append(i//j)
-            if j**2 == i:
-                sd.append(j)
-        print(i, sum(sd))
-for i in range(1660006, 1670000, 10):
-    if (i % 6 == 0) and (i % 7 == 0) and (i % 8 == 0):
-        k += 1
-        sd = []
-        for j in range(2, (int)(i**0.5)+1):
-            if (i % j == 0) and (j**2 != i):
-                sd.append(j)
-                sd.append(i//j)
-            if j**2 == i:
-                sd.append(j)
-        print(i, sum(sd))
+for n in range(16606, 10000000):
+    s = str(n)
+    if s[1] == '6' and s[-1] == '6' and s[2:-2].count('6') >= 1:
+        if (n % 6 == 0) and (n % 7 == 0) and (n % 8 == 0):
+            k += 1
+            sd = []
+            for i in range(1, int(n**0.5) + 1):
+                if n % i == 0 and i**2 != n:
+                    sd.append(i)
+                    sd.append(n//i)
+                if i**2 == n:
+                    sd.append(i)
+            print(n, sum(sd))
     if k == 7:
         break
