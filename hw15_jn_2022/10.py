@@ -7,3 +7,4 @@ for i in range(4, 100):
     if f(3, i) != 0:
         k += 1
 print(k)
+#32

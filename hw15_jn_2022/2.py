@@ -15,3 +15,4 @@ for i1 in s:
                             and w.count('М') == 1 and w.count('У') == 1):
                                 l += 1
 print(l)
+#360

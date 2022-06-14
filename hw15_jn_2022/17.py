@@ -14,3 +14,6 @@ for i in range(len(k) - 1):
         if summ % 93 == 0 and summ % 2 != 0:
             sd.append(summ)
 print(max(sd))
+
+#A - 22227
+#B - ???

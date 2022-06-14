@@ -5,3 +5,4 @@ def f(x, y):
         #return f(x + 1, y) + f(int(str(x) + '1') if int(str(x) + '1') % 3 == 0 else x, y) + f(x * 5, y)
         return f(x + 1, y) + f((int(str(x) + '1'), x)[x % 3 == 0], y) + f(x * 5, y)
 print(f(1, 140))
+#???

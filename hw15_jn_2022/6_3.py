@@ -24,3 +24,4 @@ def f(s, h, n):
 for s in range(1, 20):
     if f(s, 0, 0):
         print(s)
+#1 19

@@ -12,3 +12,4 @@ for i1 in s:
                                     if i7 != i6 and i6 != i5:
                                         k += 1
 print(k)
+#2099520

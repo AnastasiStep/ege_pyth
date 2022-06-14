@@ -7,3 +7,4 @@ for i in range(1, 1000):
     if f(i, 0, 80)<= 5:
         k += 1
 print(k)
+#???

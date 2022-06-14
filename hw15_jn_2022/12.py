@@ -19,3 +19,4 @@ for l in range(238941, 315675):
             maxa = max(dl) - min(dl)
             m = n
 print(k, n)
+#16330 157837
