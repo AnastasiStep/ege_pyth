@@ -1,4 +1,4 @@
-f = open('hw15_jn_2022/16B.txt')
+f = open('hw15_jn_2022/16A.txt')
 l = int(f.readline())
 M = 4043520
 s = []
@@ -17,4 +17,6 @@ for i in range(len(s)):
                 p *= s[i + 1]
                 i += 1
 print(len(sd))
-        
+
+#A - 18
+#B - 12
